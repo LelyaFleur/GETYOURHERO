@@ -1,0 +1,130 @@
+@charset "utf-8";
+body {
+}
+.container {
+	width: 1020px;
+	height: 894px;
+	background-color: #ffffff;
+}
+#header {
+	width: 1020px;
+	height: 81px;
+	background-color: #42bfe6;
+    position: relative;
+	margin: 0 auto;
+}
+
+img.imgResponsive {
+	width: 280px;
+	height: 45px;
+	position: absolute;
+ 	top: 50%;
+ 	left: 50%;
+ 	transform: translate(-50%, -50%);
+}
+
+#footer {
+	display: block;
+	width: 1020px;
+	height: 58px;
+	background-color: #42bfe6;
+	margin: 0 auto;
+}
+
+#footerText {
+	width: 144px;
+	height: 19px;
+	text-align:center;
+	font-family: 'Myriad Pro';
+	color: #ffffff;
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 48px;
+	margin: 0 auto;
+    transform: scale(2.141,2.147);
+}
+
+#basket {
+	width: 147px;
+	height: 53px;
+	font-family: Arial;
+	color: #42bfe6;
+	font-size: 20px;
+	font-weight: 400;
+	margin: 0 auto;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+#order{
+	width: 401px;
+	height: 303px;
+	margin: 0 auto;
+	padding-top: 30px;
+}
+
+#form {
+	margin: 0 auto;
+}
+
+.table {
+	font-family: Arial;
+	border-collapse: collapse;
+}
+
+table.th {
+    text-align: right;
+    border-bottom: 1px solid #ddd;
+}
+
+.table tr:hover{background-color:#ddd}
+
+.tableTotal {
+	font-family: Arial;
+	border-collapse: collapse;
+	width: 380px;
+	height: 100px;
+	padding-bottom: 30px;
+	margin-bottom: 30px;
+}
+
+.combo {
+}
+
+.comboText {
+	display:inline;
+}
+
+.comboButton {
+	display:inline;	
+}
+
+input[type=text] {
+	border:none;
+	resize:horizontal;
+	width:30px;
+	text-align: right;
+}
+
+input[type=button] {	
+	width: 25 px;
+	height: 25 px;
+	border:none;
+	background-color: #42bfe6;
+	box-shadow:none;
+	margin-right: 3px;
+}
+
+#purchase {
+	width: 125px;
+	height: 51px;
+	border-radius: 10px;
+	background-color: #42bfe6;
+	font-family: 'Myriad Pro';
+	color: #ffffff;
+	font-size: 24px;
+	font-weight: 400;
+	line-height: 48px;
+}
+
+

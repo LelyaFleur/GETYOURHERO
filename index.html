@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Get Your Hero</title>
+    <!-- Bootstrap -->
+	<link href="css/bootstrap.css" rel="stylesheet">
+
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+		  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->        
+  </head>
+  <body>
+<header id ="header"><img src="images/gyh_logo.png" alt="" width="280" height="45" class="imgResponsive"/>&nbsp;</header>
+<div class="container">
+  <div id="basket">Your Basket</div>
+  <div id="order">
+    <form id="form" name="form" method="post">
+      <table  class ="table" id = "orderTable">
+        <tbody>
+          <tr>
+            <th scope="col" style="width:100px;">Product </th>
+            <th scope="col">Qty </th>
+            <th scope="col">Price </th>
+            <th scope="col">Total </th>
+          </tr>
+          <tr>
+            <td style="width:100px;">Cleaning Detergent</td>
+            <td>
+                 <div class="combo">
+                    <div class="comboText">
+                      <input type="text" name="textfield1" class ="quantity" id="textfield1" value = "2">
+                    </div>
+                    <div class = "comboButton"><input type="button" value = "+" class = "comboPlus"><input type="button" value = "-" class = "comboMinus">
+                    </div>
+                </div>
+            </td>
+            <td class = "price" id="price-cd">&euro;6.00</td>
+            <td class = "totalPrice" id="total-cd">&euro;12.00</td>
+            <td><input type="image" src="images/Trash.png" class="trash" value="">
+            </td>
+          </tr>
+          <tr>
+            <td style="width:100px;">Window Cleaner </td>
+            <td>
+                <div class="combo">
+                    <div class="comboText">
+                      <input type="text" name="textfield2" id="textfield2" class ="quantity" value = "2">
+                                           </div>
+                    <div class = "comboButton"><input type="button" value = "+" class="comboPlus"><input type="button" value = "-" class="comboMinus">
+                    </div>
+                </div>
+            </td>
+            <td class = "price" id="price-wc">&euro;4.00</td>
+            <td class = "totalPrice" id ="total-wc">&euro;8.00</td>
+            <td><input type="image" src="images/Trash.png" value="" class = "trash"></td>
+          </tr>
+          <tr>
+            <td style="width:100px;">Broom </td>
+            <td>
+            <div class="combo">
+                    <div class="comboText">
+                      <input type="text" name="textfield3" id="textfield3" class ="quantity" value = "1" style="resize:horizontal; width:30px">
+                    </div>
+                    <div class = "comboButton"><input type="button" value = "+" class="comboPlus"><input type="button" value = "-" class="comboMinus">
+                    </div>
+                </div>
+            </td>
+            <td class = "price" id="price-br">&euro;10.00</td>
+            <td class = "totalPrice" id="total-br">&euro;10.00</td>
+            <td><input type="image" src="images/Trash.png" value="" class = "trash"></td>
+          </tr>
+        </tbody>
+      </table>
+      <table class = "tableTotal">
+ 	 	 <tbody>
+            <tr>
+              <td align="left">Subtotal </td>
+              <td id="subtotal" align="right">&euro;30.00</td>
+            </tr>
+            <tr>
+              <td align="left" color="#ddd" >Vat @ 20%</td>
+              <td id="vat" align="right">&euro;6.00</td>
+            </tr>
+            <tr>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+            </tr>
+            <tr>
+              <td align="left">Total Cost </td>
+              <td id="totalCost" align="right">&euro;36.00</td>
+            </tr>
+         </tbody>
+	  </table>
+      <input type="submit" value = "Purchase" id = "purchase" style="float: right;">
+    </form> 
+  </div>
+</div>
+<footer id="footer">
+  <div id="footerText">© GetYourHero</div>
+</footer>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+	<script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/logics.js"></script>
+    
+	<!-- Include all compiled plugins (below), or include individual files as needed --> 
+    <script type="text/javascript" src="js/form.js"></script>
+	<script src="js/bootstrap.js"></script>
+  </body>
+</html>
